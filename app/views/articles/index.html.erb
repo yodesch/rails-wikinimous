@@ -1,0 +1,26 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);">
+  <div class="container">
+    <h1><strong>Articles</strong></h1>
+    <%= link_to "new article", new_article_path, class: "btn btn-ghost"%>
+  </div>
+</div>
+
+<br><br>
+
+  <div class="container">
+<ol class="link">
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article), class:"article" %>
+    <br>
+    <%= article.content%>
+    </li>
+    <br>
+
+  <% end %>
+</ol>
+
+  </div>
+
+  <div class= "timer">
+    <i class="fa-solid fa-clock"><%= time_tag Time.now%></i>
+  </div>

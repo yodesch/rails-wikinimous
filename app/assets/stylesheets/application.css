@@ -13,3 +13,79 @@
  *= require_tree .
  *= require_self
  */
+ .banner {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  fl: auto;
+  justify-content: space-between;
+}
+
+.article {
+  color: darkblue;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.link {
+  color:brown;
+  justify-content: center;
+  text-align:start;
+  list-style-position: inside ;
+  font-size: 16px;
+}
+
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin-bottom: 8px;
+  background-color: beige;
+  position:relative;
+  left: 440px;
+  top: 56px;
+
+}
+
+.timer {
+  position: absolute;
+  right: 16px;
+  text-decoration-color: #080808;
+  text-decoration:solid;
+  color:rgb(5, 5, 5);
+  text-decoration-skip: black;
+
+}
+
+.container {
+  flex:auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  ;
+}
+
+#content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #570b7d;
+}
